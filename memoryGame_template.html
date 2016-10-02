@@ -14,6 +14,36 @@
 		SIZE = 52;
 		PAIR = 2;
 		SUITS = new Array('Spade', 'Heart', 'Diamond', 'Club');
+		
+		//These functions inserts the title and time remaining 
+document.writeln("Memory Game");
+document.writeln("(Time Remaining:");
+
+
+
+// This function creates the array and table for the set-up of the game. 
+ (function() {
+        var images = ['back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif',
+'back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif',
+'back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif','back.gif',
+'back.gif','back.gif','back.gif','back.gif','back.gif','back.gif'], columns = 13,
+        l = images.length, i,
+        table = document.createElement('table'),
+        tbody = table.appendChild(document.createElement('tbody')),
+        tr, td, img;
+        for( i=0; i<l; i++) {
+            if( i % columns == 0) tr = tbody.appendChild(document.createElement('tr'));
+            tr.appendChild(document.createElement('td'))
+              .appendChild(document.createElement('img'))
+              .src = images[i];
+        }
+        document.body.appendChild(table);
+    })();
+
+
+
+
+		
 	
 	
 	</script>
